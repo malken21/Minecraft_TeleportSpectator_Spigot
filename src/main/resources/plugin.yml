@@ -1,0 +1,7 @@
+name: TeleportSpectator
+version: '${version}'
+main: marumasa.spectator_tp.minecraft
+api-version: 1.19
+commands:
+  stp:
+    description: "/stp [player]"
