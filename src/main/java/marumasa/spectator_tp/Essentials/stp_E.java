@@ -1,4 +1,4 @@
-package marumasa.spectator_tp.tp;
+package marumasa.spectator_tp.Essentials;
 
 import marumasa.spectator_tp.Config;
 import marumasa.spectator_tp.minecraft;
@@ -10,11 +10,11 @@ import org.bukkit.entity.Player;
 
 import java.util.List;
 
-public class stp implements CommandExecutor {
+public class stp_E implements CommandExecutor {
     private final Config con;
     private final minecraft mc;
 
-    public stp(final Config config, minecraft minecraft) {
+    public stp_E(final Config config, minecraft minecraft) {
         con = config;
         mc = minecraft;
     }
@@ -26,6 +26,6 @@ public class stp implements CommandExecutor {
         if (players.size() == 0) return false;
         Player targetPlayer = players.get(0);
         final Player senderPlayer = (Player) sender;
-        return start.tp(senderPlayer, targetPlayer, con.cooldown, mc);
+        return start_E.tp(senderPlayer, targetPlayer, con.cooldown, mc);
     }
 }
